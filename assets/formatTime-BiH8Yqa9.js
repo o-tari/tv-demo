@@ -1,0 +1,1 @@
+const o=r=>{if(!r)return"0:00";const t=r.match(/PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?/);if(!t)return"0:00";const n=parseInt(t[1]||"0",10),a=parseInt(t[2]||"0",10),s=parseInt(t[3]||"0",10);return n>0?`${n}:${a.toString().padStart(2,"0")}:${s.toString().padStart(2,"0")}`:`${a}:${s.toString().padStart(2,"0")}`};export{o as f};
